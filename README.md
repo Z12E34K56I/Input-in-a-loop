@@ -15,10 +15,23 @@ print(f"The final score is {total}.")
 
 count=0
 
-win=0
+wins=0
 
 losses=0
 
 while count<=6:
 
      result=input("Enter the result("WIN or LOSSES:)")unpper()
+
+     if result=="W":
+
+        wins+=1
+
+     elif result=="L":
+
+           losses+=1
+
+           count+=1
+
+radio=wins/losses
+print(f"The win/loss ratio is {ratio}." )
